@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist with Essay</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="index.js" defer></script>
+</head>
+<body>
+    <header class="top-bar">
+        <h1 class="top-bar-title">Classical Music Through My Times</h1>
+        <div class="audio-controller">
+           
+            <button class="audio-button back-button">
+                <i class="fas fa-step-backward" onclick="backClick(event)"></i>
+            </button>
+            <button class="audio-button play-pause-button">
+                <i class="fas fa-play" id="play-button" onclick="pauseClick(event)"></i>
+            </button>
+            <button class="audio-button forward-button">
+                <i class="fas fa-step-forward" onclick="nextClick(event)"></i>
+            </button>
+            
+            <div class="audio-component">
+
+                <h2 id="current-song-title"></h2>
+                <audio controls>
+                    <source src="assets/jazz.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+    </header>
+
+    
+
+    
+  <div class="container">
+    <!-- Playlist Section -->
+    <div class="playlist-container">
+      <div class="playlist-header">
+        <img src="assets/playlist-cover.jpeg" alt="Playlist Photo" class="playlist-photo">
+        <div class="playlist-info">
+          <h1 class="playlist-title">Classical Music Through My Times</h1>
+          <p class="playlist-description">By Brianna McAleer</p>
+        </div>
+      </div>
+
+      <div class="song-list">
+        
+        <div class="song-item" id="song-1" onclick="changeState(1)">
+          <img src="assets/song-1.jpeg" alt="Song 1" class="song-photo">
+          <div class="song-info">
+            <h2 class="song-title">Jupiter</h2>
+            <p class="song-artist">Gustav Holst</p>
+          </div>
+        </div>
+
+        <div class="song-item" id="song-2" onclick="changeState(2)">
+          <img src="assets/song-2.jpeg" alt="Song 2" class="song-photo">
+          <div class="song-info">
+            <h2 class="song-title">Allegro Brilliante</h2>
+            <p class="song-artist">William Ten Have</p>
+          </div>
+        </div>
+
+        <div class="song-item" id="song-3" onclick="changeState(3)">
+          <img src="assets/song-3.jpeg" alt="Song 3" class="song-photo">
+          <div class="song-info">
+            <h2 class="song-title">Toreador</h2>
+            <p class="song-artist">Georges Bizet</p>
+          </div>
+        </div>
+
+        <div class="song-item" id="song-4" onclick="changeState(4)">
+          <img src="assets/song-4.jpeg" alt="Song 4" class="song-photo">
+          <div class="song-info">
+            <h2 class="song-title">Symphony No. 4 In A Major</h2>
+            <p class="song-artist">Felix Mendelssohn</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Essay Section -->
+    <div class="essay-container">
+      <h2 id="essay-title"></h2>
+      <pre id="essay-text"></pre>
+        
+    </div>
+  </div>
+</body>
+</html>

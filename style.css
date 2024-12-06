@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    padding-top: 130px;
+  }
+
+  
+  /* Top Bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #8b0000; /* Dark red */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .top-bar-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  
+
+  .audio-controller {
+    width: 100%; /* Full page width */
+    background-color: #e8e8e8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-sizing: border-box; /* Prevents overflow */
+    position: fixed;
+    top: 60px; /* Below the top bar */
+    left: 0;
+    z-index: 5;
+  }
+
+  /* Styling for the buttons */
+  .audio-button {
+    background-color: #e8e8e8; /* Slightly lighter grey */
+    color: #7f7f7f;
+    border: none;
+    padding: 5px 10px;
+    font-size: 24px; /* Increase icon size */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px; /* Space between buttons */
+  }
+  
+  /* Button hover effect */
+  .audio-button:hover {
+    background-color: #8b0000; /* Dark red */
+    transform: scale(1.1); /* Slightly enlarge the button */
+  }
+  
+  .audio-button i {
+    transition: color 0.3s ease; /* Smooth color transition for icons */
+  }
+  
+  /* Change icon color on hover */
+  .audio-button:hover i {
+    color: #fff; /* Icon turns white on hover */
+  }
+
+.audio-component{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the song title */
+#current-song-title {
+    text-align: center;
+    font-size: 18px;
+    margin: 0; /* Ensure no margin between title and audio */
+    color: #525252;
+
+}
+
+/* Styling for the audio element */
+audio {
+    margin-top: 5px;
+    background-color: #e8e8e8;
+}
+
+audio::-webkit-media-controls-play-button {
+    display: none;
+}
+  
+  
+  /* Main Container */
+  .container {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  /* Playlist Container */
+  .playlist-container {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .playlist-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #e8e8e8;
+  }
+  
+  .playlist-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .playlist-info {
+    flex: 1;
+  }
+  
+  .playlist-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .playlist-description {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .song-list {
+    padding: 20px;
+  }
+  
+  .song-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .song-item:hover {
+    background: #f0f0f0;
+  }
+  
+  .song-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .song-info {
+    flex: 1;
+  }
+  
+  .song-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .song-artist {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Essay Container */
+  .essay-container {
+    flex: 1; /* Takes 1 part of the available width */
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  
+    /* Center text */
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    /* Add margin to the sides */
+    padding: 30px 100px;
+  }
+  
+  
+  #essay-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  #essay-text {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    max-height: 700px;
+    overflow-y: auto;
+    padding-right: 10px; 
+  }
+
+
+  
