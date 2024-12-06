@@ -1,7 +1,7 @@
 // when i click the play button, it changes state to the certain essay, plays the song, opens
 var state = 0
 
-const songNames = ["Description", "Jupiter", "Allegro Brilliante", "Toreador", "Symphony No. 4 In A Major"]
+const songNames = ["Description", "Jupiter", "Allegro Brilliante", "Toreador", "Symphony No. 4 in A Major"]
 
 changeEssay()
 
