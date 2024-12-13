@@ -1,7 +1,7 @@
 // when i click the play button, it changes state to the certain essay, plays the song, opens
 var state = 0
 
-const songNames = ["Description", "Jupiter", "Allegro Brilliante", "Toreador", "Symphony No. 4 in A Major"]
+const songNames = ["Description", "Jupiter", "Allegro Brilliante", "Toreador", "Symphony No. 4 In A Major"]
 
 changeEssay()
 
@@ -67,7 +67,7 @@ function changeEssay(){
             return response.text();
         })
         .then(text => {
-            document.getElementById("essay-text").textContent = text;
+            document.getElementById("essay-text").innerHTML = text;
         })
         .catch(error => {
             console.error('Error loading text file:', error);
